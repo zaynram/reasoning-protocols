@@ -1,0 +1,14 @@
+{
+    "name": "reasoning-protocols",
+    "description": "Five structured reasoning protocols: adversarial stress-testing, impact forecasting, tradeoff analysis, assumption surfacing, and plan review.",
+    "repository": "https://github.com/crosbycrosbylaw/claude-marketplace",
+    "author": { "name": "zaynram", "email": "zramdass@crosbyandcrosbylaw.com" },
+    "license": "MIT",
+    "keywords": ["reasoning", "decision-making", "analysis", "protocols"],
+    "mcpServers": {
+        "sequential-thinking": {
+            "command": "bunx",
+            "args": ["@modelcontextprotocol/server-sequential-thinking"]
+        }
+    }
+}

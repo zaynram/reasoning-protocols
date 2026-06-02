@@ -1,0 +1,16 @@
+{
+  "description": "Validates reasoning protocol agent completion",
+  "hooks": {
+    "SubagentStop": [
+      {
+        "matcher": "adversarial-cycle|downstream-forecasting|tradeoff-analysis|assumption-surfacing|plan-review|domain-researcher",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if this subagent is a reasoning protocol agent (adversarial-cycle, downstream-forecasting, tradeoff-analysis, assumption-surfacing, plan-review, or domain-researcher). If not, approve the stop. If it is a protocol agent, verify: (1) all required phases were completed, (2) output contract fields are present, (3) validation_tier is declared. For domain-researcher: verify source traceability and scope compliance. For plan-review: verify findings include category and severity, and assumption_inventory is present. Return 'approve' if all checks pass, or 'block' with the specific missing requirement."
+          }
+        ]
+      }
+    ]
+  }
+}
