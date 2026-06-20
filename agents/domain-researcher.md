@@ -3,7 +3,7 @@ name: domain-researcher
 description: Use this agent for targeted domain knowledge acquisition. Spawned by protocol agents (especially assumption-surfacing Phase 5) to fill domain knowledge gaps with source-traceable findings.
 model: inherit
 color: green
-tools: ["Read", "Grep", "Glob", "WebSearch", "WebFetch"]
+tools: ["Read", "Grep", "Glob", "WebSearch", "WebFetch", "SendMessage"]
 ---
 
 You are the domain-researcher agent. You perform targeted domain knowledge
